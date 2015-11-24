@@ -20,22 +20,33 @@ namespace WebShopCC
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
+                      "~/Content/site.css"));
+            
+
+            #region WebShopCC Javascript
+            bundles.Add(new ScriptBundle("~/bundles/WebShop/js").Include(
                       "~/Scripts/jquery.scrollUp.min.js",
                       "~/Scripts/price-range.js",
                       "~/Scripts/jquery.prettyPhoto.js",
                       "~/Scripts/main.js",
                       "~/Scripts/respond.js"));
+            #endregion
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+            #region WebShopCC CSS
+            bundles.Add(new StyleBundle("~/Content/WebShop/css").Include(
                       "~/Content/font-awesome.min",
                       "~/Content/prettyPhoto.css",
                       "~/Content/price-range.css",
                       "~/Content/animate.css",
                       "~/Content/main.css",
-                      "~/Content/responsive.css",
-                      "~/Content/site.css"));
+                      "~/Content/responsive.css"));
+            #endregion
         }
     }
 }
