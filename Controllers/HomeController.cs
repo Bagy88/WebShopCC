@@ -3,14 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebShopCC.Models;
 
 namespace WebShopCC.Controllers
 {
     public class HomeController : Controller
     {
+        private WebShopCC_Entities db = new WebShopCC_Entities();
+
         public ActionResult Index()
         {
-            return View();
+            HomePageViewModel hpvm = new HomePageViewModel();
+            hpvm.Products = db.Product.ToList();
+            hpvm.Categories = db.Category.ToList();
+
+            return View(hpvm);
+        }
+
+        public ActionResult HomeResult(int? categoryid)
+        {
+            IEnumerable<Product> product_list = null;
+            if (categoryid.HasValue)
+            {
+                product_list = db.Product
+                .Where(x => x.IDCategory == categoryid.Value)
+                .ToList();
+            }
+            else
+            {
+                product_list = db.Product.ToList();
+            }
+
+            return PartialView("_HomeResult", product_list);
         }
 
         public ActionResult About()

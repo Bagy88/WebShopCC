@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WebShopCC.Models.Product>
+
+<div class="features_items">
+    <!--features_items-->
+    <h2 class="title text-center">Products</h2>
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-4">
+            <div class="product-image-wrapper">
+                <div class="single-products">
+                    <div class="productinfo text-center">
+                        <!--PLACEHOLD.IT-->
+                        <img src="http://placehold.it/255x237" alt="" />
+                        <h2>@(item.Price)€</h2>
+                        <p>@(item.Name)</p>
+                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    </div>
+                    <div class="product-overlay">
+                        <div class="overlay-content">
+                            <h2>@(item.Price)€</h2>
+                            <p>@(item.Name)</p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div><!--features_items-->

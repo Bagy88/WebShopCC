@@ -214,6 +214,7 @@
     <Compile Include="Models\Customer.cs">
       <DependentUpon>WebShopCCModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomePageViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs">
@@ -286,7 +287,9 @@
     <Content Include="Content\main.css" />
     <Content Include="Content\prettyPhoto.css" />
     <Content Include="Content\price-range.css" />
+    <Content Include="Content\images\reload.gif" />
     <Content Include="Content\responsive.css" />
+    <Content Include="Content\images\ring.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -332,6 +335,8 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.prettyPhoto.js" />
     <Content Include="Scripts\jquery.scrollUp.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -378,6 +383,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Shared\_Layout - Original.cshtml" />
+    <Content Include="Views\Home\_HomeResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -76,6 +76,6 @@ c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\bin\Micr
 c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\bin\Microsoft.Owin.Security.Google.xml
 c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\obj\Release\WebShopCC.csprojResolveAssemblyReference.cache
 c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\obj\Release\WebShopCC.dll
 c:\users\user\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\obj\Release\WebShopCC.pdb
+C:\Users\User\documents\visual studio 2015\Projects\WebShopCC\WebShopCC\obj\Release\WebShopCC.csprojResolveAssemblyReference.cache

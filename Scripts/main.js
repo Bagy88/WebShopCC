@@ -8,6 +8,16 @@
 		
 /*scroll to top*/
 
+	function view_loader() {
+	    $("#spinner").show();
+	}
+
+	function hide_loader() {
+	    $("#spinner").hide();
+	}
+
+    
+
 $(document).ready(function(){
 	$(function () {
 		$.scrollUp({

@@ -263,7 +263,7 @@ a#scrollUp i{
   outline: medium none;
   padding-left: 10px;
   width: 155px;
-  background-image: url(images/searchicon.png);
+  background-image: url("../images/searchicon.png");
   background-repeat: no-repeat;
   background-position: 130px;
 }
@@ -2520,4 +2520,14 @@ h2.title {
   color: #FE980F;
 }
 
-
+.ajax-loader {
+  margin: 0px; 
+  padding: 0px; 
+  position: fixed; 
+  right: 0px; 
+  top: 0px;  
+  z-index: 30001; 
+  opacity: 0.8;
+  left : 50%;
+  top : 50%;
+}
