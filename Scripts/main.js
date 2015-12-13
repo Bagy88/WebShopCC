@@ -16,6 +16,25 @@
 	    $("#spinner").hide();
 	}
 
+	function AddToCart(Id) {
+
+	    var Cart = {
+	        SessionID: $('#sessionId').val(),
+	        IDProduct: Id,
+	        Quantity: 1,
+	        Date: new Date()
+	    };
+
+	    $.ajax({
+	        contentType: 'application/json',
+	        type: 'POST',
+	        url: 'api/Carts/',
+	        data: JSON.stringify(Cart),
+	        success: function (data) {
+	            alert('success');
+	        }
+	    });
+	}
     
 
 $(document).ready(function(){

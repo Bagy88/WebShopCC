@@ -16,6 +16,10 @@ namespace WebShopCC.Controllers
             HomePageViewModel hpvm = new HomePageViewModel();
             hpvm.Products = db.Product.ToList();
             hpvm.Categories = db.Category.ToList();
+            var cart = ShoppingCart.GetCart(this);
+            hpvm.CartID = cart.ShoppingCartId;
+
+            ViewBag.SessionID = cart.ShoppingCartId;
 
             return View(hpvm);
         }

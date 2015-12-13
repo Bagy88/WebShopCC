@@ -48,6 +48,12 @@ namespace WebShopCC
                       "~/Content/main.css",
                       "~/Content/responsive.css"));
             #endregion
+
+            #region Knockout.js
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+              "~/Scripts/knockout-{version}.js",
+              "~/Scripts/app.js"));
+            #endregion
         }
     }
 }

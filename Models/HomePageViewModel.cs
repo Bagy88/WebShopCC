@@ -9,5 +9,6 @@ namespace WebShopCC.Models
     {
         public List<Product> Products { get; set; }
         public List<Category> Categories { get; set; }
+        public string CartID { get; set; }
     }
 }
