@@ -290,6 +290,7 @@
     <Content Include="Content\images\reload.gif" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\images\ring.gif" />
+    <Content Include="Content\webshop.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

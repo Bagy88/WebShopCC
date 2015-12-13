@@ -43,6 +43,7 @@ namespace WebShopCC
                       "~/Content/font-awesome.min",
                       "~/Content/prettyPhoto.css",
                       "~/Content/price-range.css",
+                      "~/Content/webshop.css",
                       "~/Content/animate.css",
                       "~/Content/main.css",
                       "~/Content/responsive.css"));
