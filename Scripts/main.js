@@ -31,7 +31,7 @@
 	        url: 'api/Carts/',
 	        data: JSON.stringify(Cart),
 	        success: function (data) {
-	            alert('success');
+	            Success('Added to cart');
 	        }
 	    });
 	}
